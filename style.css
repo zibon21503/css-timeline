@@ -1,0 +1,41 @@
+.simple-timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .simple-timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: #090e12;
+    left: 50%;
+  }
+  
+  .timeline-event {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .event-desc {
+    width: 45%;
+    padding-left: 20px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .timeline-event::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    left: 48.6%;
+    top: 50%;
+  }
